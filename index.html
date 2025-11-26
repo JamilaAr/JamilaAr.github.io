@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jamila Arabat — Resume</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
@@ -76,6 +76,13 @@
   </main>
 
   <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Jamila Arabat — Built with HTML & CSS • Hosted on GitHub Pages</p>
+    </div>
   </footer>
+  <script>
+    // small script for current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
